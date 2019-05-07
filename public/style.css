@@ -1,0 +1,33 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='number'] {
+    width: 200px;
+    height: 14px;
+    padding: 2px 5px;
+}
+
+textarea {
+    margin-top: 10px;
+    line-height: 14px;
+    height: 14px;
+    font-size: 14px;
+    width: 200px;
+    resize: none;
+    padding: 10px 5px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calcApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple calculator</h1>
+    <div ng-controller="MainCtrl as mc" class="container">
+        <form ng-submit="mc.calculate()">
+            <input type="number" ng-model="mc.value1"/>
+            <input type="number" ng-model="mc.value2"/>
+            <input type="submit" value="submit">
+            <textarea disabled ng-model="mc.result"></textarea>
+        </form>
+    </div>
+</body>
+</html>
